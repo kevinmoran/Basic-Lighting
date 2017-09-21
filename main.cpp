@@ -32,7 +32,7 @@ int main(){
 		float* vt = NULL;
 		uint16_t* indices = NULL;
 		unsigned int num_verts = 0;
-		load_obj_indexed("cube.obj", &vp, &vt, &vn, &indices, &num_verts, &cube_num_indices, false);
+		load_obj_indexed("cube.obj", &vp, &vt, &vn, &indices, &num_verts, &cube_num_indices);
 
 		glGenVertexArrays(1, &cube_vao);
 		glBindVertexArray(cube_vao);
